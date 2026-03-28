@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mulpro"
+version = "0.1.6"
+description = "Running any worker function in parallel and producing output in a separate process"
+readme = "README.md"
+authors = [
+    {name = "Max F. Hantke", email = "maxhantke@gmail.com"}
+]
+license = {text = "BSD"}
+keywords = ["multiprocessing", "pipes", "parallel", "processes"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.7"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/mhantke/mulpro"
+
+[tool.setuptools]
+# Since the setup.py specifically listed ['mulpro'], we do the same here
+packages = ["mulpro"]
